@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Dami's WDD231 course home page — portfolio, chamber project, and final project.">
+    <meta name="author" content="Dami">
+    <title>Home | Dami - WDD231</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=YOUR_FONT_HERE" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <img src="images/logo.svg" alt="Site Logo" width="40" height="40">
+        <span>Dami</span>
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="chamber/index.html">Chamber Project</a></li>
+                <li><a href="final/index.html">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>I'm Dami! I'm based in Lagos, Nigeria, currently studying web development and working on building out my skills in HTML, CSS, and JavaScript. Outside of coursework, I handle social media content and order fulfillment for Ballers Market, a Lagos-based sneaker resale business. I'm passionate about combining creativity and code to build clean, functional websites — this course is a big step in that direction.</p>
+            <img src="images/student-photo.jpg" alt="Photo of Dami" width="300" height="300">
+        </section>
+
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="filter-buttons">
+                <button id="btn-all">All</button>
+                <button id="btn-wdd">WDD</button>
+                <button id="btn-cse">CSE</button>
+            </div>
+            <div id="course-cards" class="course-cards">
+                <!-- course cards injected here by courses.js -->
+            </div>
+            <p id="credit-total"></p>
+        </section>
+
+        <section class="courses">
+            <h2><!-- your third section heading here --></h2>
+            <!-- content -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/YOUR_USERNAME" target="_blank" aria-label="GitHub">
+                <img src="images/github-icon.svg" alt="GitHub" width="24" height="24">
+            </a>
+            <a href="https://linkedin.com/in/YOUR_PROFILE" target="_blank" aria-label="LinkedIn">
+                <img src="images/linkedin-icon.svg" alt="LinkedIn" width="24" height="24">
+            </a>
+        </div>
+
+        <p>&copy; <span id="year"></span> Dami &bull; Lagos, Nigeria</p>
+
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>

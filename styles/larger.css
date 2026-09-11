@@ -1,0 +1,47 @@
+@media only screen and (min-width: 38rem) {
+    header, main, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        position: static;
+        width: auto;
+        border-bottom: none;
+        background: none;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 10px;
+    }
+
+    .navigation ul li {
+        border-top: none;
+    }
+
+    .about-me {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .about-me img {
+        max-width: 200px;
+        margin: 0;
+        order: 2;
+    }
+
+    .about-me p {
+        order: 1;
+        flex: 1;
+    }
+
+    .course-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
