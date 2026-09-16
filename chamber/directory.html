@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Directory of member businesses for the Lagos Chamber of Commerce.">
+    <meta name="author" content="Damilare Samuel Ajayi">
+    <title>Directory | Lagos Chamber of Commerce</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <!-- Facebook / Open Graph meta -->
+    <meta property="og:title" content="Lagos Chamber of Commerce - Directory">
+    <meta property="og:description" content="Browse member businesses of the Lagos Chamber of Commerce.">
+    <meta property="og:image" content="https://damie-aj95.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://damie-aj95.github.io/wdd231/chamber/directory.html">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="../images/logo.svg" alt="Lagos Chamber of Commerce Logo" width="40" height="40">
+        <span>Lagos Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Directory</h1>
+
+        <div class="view-toggle">
+            <button id="grid-btn" aria-label="Grid view">Grid</button>
+            <button id="list-btn" aria-label="List view">List</button>
+        </div>
+
+        <section id="directory-cards" class="directory-cards">
+            <!-- member cards injected here by directory.js -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <p>Lagos Chamber of Commerce</p>
+            <p>14 Adeniran Ogunsanya St, Surulere, Lagos</p>
+            <p>info@lagoscc.org</p>
+            <p>(234) 800-555-0100</p>
+        </div>
+
+        <div class="social-links">
+            <a href="#" target="_blank" aria-label="YouTube">
+                <img src="images/youtube-icon.svg" alt="YouTube" width="24" height="24">
+            </a>
+            <a href="#" target="_blank" aria-label="Twitter">
+                <img src="images/twitter-icon.svg" alt="Twitter" width="24" height="24">
+            </a>
+            <a href="#" target="_blank" aria-label="LinkedIn">
+                <img src="images/linkedin-icon.svg" alt="LinkedIn" width="24" height="24">
+            </a>
+        </div>
+
+        <div class="footer-dev-info">
+            <p>WDD 231 Class Project</p>
+            <p>Damilare Samuel Ajayi</p>
+            <p>&copy; <span id="year"></span> Lagos Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+@media only screen and (min-width: 38rem) {
+    header, main, footer {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        position: static;
+        width: auto;
+        border-bottom: none;
+        background: none;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 10px;
+    }
+
+    .navigation ul li a {
+        background: none;
+        color: #3d405b;
+        border-bottom: none;
+        padding: 8px 12px;
+    }
+
+    .navigation ul li a:hover,
+    .navigation ul li.current a {
+        background-color: #e07a5f;
+        color: #fff;
+        border-radius: 4px;
+    }
+
+    .directory-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .directory-cards.list-view {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+}

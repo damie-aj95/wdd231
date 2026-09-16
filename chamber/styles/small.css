@@ -1,0 +1,217 @@
+/* Site-wide */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: #fdfdfd;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #3d405b;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+header span {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #3d405b;
+    margin-left: 8px;
+    margin-right: auto;
+}
+
+/* Hamburger */
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: #3d405b;
+    cursor: pointer;
+}
+
+.hamburger::after {
+    content: "\2630";
+}
+
+.hamburger.show::after {
+    content: "\00D7";
+}
+
+/* Navigation */
+.navigation {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    z-index: 10;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.navigation ul li a {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    padding: 12px 15px;
+    border-bottom: 1px solid #444;
+    transition: background-color 0.2s ease;
+}
+
+.navigation ul li a:hover,
+.navigation ul li.current a {
+    background-color: #555;
+}
+
+/* Main */
+main {
+    padding: 15px;
+}
+
+h1 {
+    margin-bottom: 15px;
+    color: #3d405b;
+}
+
+/* View toggle buttons */
+.view-toggle {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.view-toggle button {
+    flex: 1;
+    padding: 10px;
+    background-color: #3d405b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.view-toggle button:hover {
+    background-color: #2c2e42;
+}
+
+/* Directory cards - grid view (default) */
+.directory-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.member-card {
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 4px solid #3d405b;
+}
+
+.member-card h2 {
+    color: #3d405b;
+    margin-bottom: 4px;
+}
+
+.member-card .tagline {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.member-card img {
+    margin: 8px 0;
+    border-radius: 4px;
+}
+
+.member-card p {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+}
+
+/* Membership tier accents */
+.member-card.gold {
+    border-left-color: #e07a5f;
+    background-color: #f5ead9;
+}
+
+.member-card.silver {
+    border-left-color: #999;
+    background-color: #eee;
+}
+
+.member-card.member {
+    border-left-color: #3d405b;
+}
+
+/* List view */
+.directory-cards.list-view {
+    grid-template-columns: 1fr;
+}
+
+.directory-cards.list-view .member-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.directory-cards.list-view .member-card img {
+    width: 80px;
+    height: 60px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+/* Footer */
+footer {
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.footer-contact p,
+.footer-dev-info p {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 3px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 12px 0;
+}
+
+.social-links img {
+    width: 28px;
+    height: 28px;
+}
