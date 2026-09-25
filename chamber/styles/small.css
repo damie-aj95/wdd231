@@ -215,3 +215,174 @@ footer {
     width: 28px;
     height: 28px;
 }
+
+.social-links img {
+    width: 28px;
+    height: 28px;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.cta-button {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e07a5f;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #c96348;
+}
+
+/* Events */
+.events {
+    margin: 25px 0;
+}
+
+.events h2 {
+    color: #3d405b;
+    margin-bottom: 10px;
+}
+
+.events ul {
+    list-style: none;
+}
+
+.events li {
+    background-color: #f2f2f2;
+    padding: 10px 12px;
+    border-left: 4px solid #3d405b;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+/* Weather */
+.weather {
+    margin: 25px 0;
+    background-color: #3d405b;
+    color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.weather h2 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#current-weather {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#current-weather .temp {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+#current-weather .description {
+    text-transform: capitalize;
+    color: #e07a5f;
+}
+
+#forecast h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+#forecast {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.forecast-day {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    border-radius: 4px;
+    flex: 1;
+}
+
+.day-name {
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.day-temp {
+    font-size: 1rem;
+}
+
+/* Spotlights */
+.spotlights {
+    margin: 25px 0;
+}
+
+.spotlights h2 {
+    color: #3d405b;
+    margin-bottom: 10px;
+}
+
+#spotlight-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.spotlight-card {
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.spotlight-card.gold {
+    background-color: #f5ead9;
+    border: 2px solid #e07a5f;
+}
+
+.spotlight-card.silver {
+    background-color: #eee;
+    border: 2px solid #999;
+}
+
+.spotlight-card img {
+    border-radius: 4px;
+    margin: 0 auto 10px;
+}
+
+.spotlight-card h3 {
+    color: #3d405b;
+    margin-bottom: 4px;
+}
+
+.spotlight-card .tier {
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #e07a5f;
+    margin-bottom: 8px;
+}
+
+.spotlight-card p {
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+}
