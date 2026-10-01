@@ -73,5 +73,17 @@
         grid-column: 1 / -1;
     }
 
+    .join-layout {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .join-form {
+        flex: 1;
+    }
+
+    .membership-cards {
+        flex: 1;
+    }
 
 }
