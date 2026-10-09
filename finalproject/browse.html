@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Catalog | Anime Explorer</title>
+  <meta name="description" content="Browse and filter top anime series by genre, ratings, and total episode count on Anime Explorer.">
+  <meta name="author" content="Your Name">
+
+  <!-- Open Graph Protocol Tags -->
+  <meta property="og:title" content="Browse Catalog | Anime Explorer">
+  <meta property="og:description" content="Browse and filter top anime series with episode counts, scores, and studio details.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://damie-aj95.github.io/wdd231/finalproject/images/og-image.jpg">
+  <meta property="og:url" content="https://damie-aj95.github.io/wdd231/finalproject/browse.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Optimized Font Loading: Dropped unused italic weights to save page weight -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="logo-link">
+        <span class="logo-icon" aria-hidden="true">🧭</span>
+        <span class="logo-text">Anime Explorer</span>
+      </a>
+      
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="browse.html" class="active" aria-current="page">Browse Catalog</a></li>
+          <li><a href="recommend.html">Recommend</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>ANIME COLLECTION</h1>
+
+    <!-- Filter & Sort Controls Bar -->
+    <div class="controls-bar">
+      <div class="control-group">
+        <label for="genre-filter">Filter Genre:</label>
+        <select id="genre-filter">
+          <option value="all">All Genres</option>
+          <option value="action">Action</option>
+          <option value="adventure">Adventure</option>
+          <option value="comedy">Comedy</option>
+          <option value="drama">Drama</option>
+          <option value="fantasy">Fantasy</option>
+          <option value="sci-fi">Sci-Fi</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label for="sort-select">Sort By:</label>
+        <select id="sort-select">
+          <option value="score-desc">Highest Score</option>
+          <option value="episodes-asc">Fewest Episodes</option>
+        </select>
+      </div>
+
+      <!-- Favorites Filter Option -->
+      <div class="control-group favorites-toggle">
+        <input type="checkbox" id="favorites-only">
+        <label for="favorites-only">Show Favorites Only ❤️</label>
+      </div>
+    </div>
+
+    <!-- Dynamic Catalog Grid Output -->
+    <section class="catalog-section">
+      <h2 class="visually-hidden">Catalog Results</h2>
+      <div id="anime-container" class="card-grid" aria-live="polite">
+        <p class="loading-state">Loading anime catalog...</p>
+      </div>
+    </section>
+
+    <!-- Modal Dialog Structure -->
+    <dialog id="anime-modal" class="anime-dialog"></dialog>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Anime Explorer | WDD231 Final Project</p>
+      <p>
+        Data powered by <a href="https://jikan.moe/" target="_blank" rel="noopener">Jikan API</a> &amp; <a href="https://myanimelist.net/" target="_blank" rel="noopener">MyAnimeList</a>.
+      </p>
+      <p>
+        <a href="attributions.html">Attributions</a> | 
+        <a href="https://www.youtube.com/watch?your-recorded-video-id" target="_blank" rel="noopener">Project Overview Video</a>
+      </p>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/nav.js"></script>
+  <script type="module" src="scripts/catalog.js"></script>
+</body>
+</html>

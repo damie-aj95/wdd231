@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Explorer | Find Your Next Adventure</title>
+  <meta name="description" content="Explore popular anime by title, genre, rating, and episode count on Anime Explorer.">
+  <meta name="author" content="Damilare Samuel Ajayi">
+
+  <!-- Open Graph Protocol Tags -->
+  <meta property="og:title" content="Anime Explorer | Find Your Next Adventure">
+  <meta property="og:description" content="Explore popular anime titles, filter by genre, and track your favorite series.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://damie-aj95.github.io/wdd231/finalproject/images/og-image.jpg">
+  <meta property="og:url" content="https://damie-aj95.github.io/wdd231/finalproject/index.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="logo-link">
+        <span class="logo-icon" aria-hidden="true">🧭</span>
+        <span class="logo-text">Anime Explorer</span>
+      </a>
+      
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <ul>
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="browse.html">Browse Catalog</a></li>
+          <li><a href="recommend.html">Recommend</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Header & Search Section -->
+    <section class="hero-section">
+      <h1>Find your next adventure.</h1>
+      <p>Explore anime by title, genre, rating, and episode count.</p>
+
+      <!-- Search Input Bar with Accessible Label -->
+      <div class="search-box">
+        <label for="anime-search" class="visually-hidden">Search Anime Titles</label>
+        <span class="search-icon" aria-hidden="true">🔍</span>
+        <input type="text" id="anime-search" placeholder="Search anime...">
+      </div>
+
+      <!-- Genre Filter Pills -->
+      <div class="filter-pills" id="filter-pills">
+        <button class="pill active" data-genre="all">All</button>
+        <button class="pill" data-genre="action">Action</button>
+        <button class="pill" data-genre="adventure">Adventure</button>
+        <button class="pill" data-genre="comedy">Comedy</button>
+        <button class="pill" data-genre="fantasy">Fantasy</button>
+      </div>
+    </section>
+
+    <!-- Popular Anime Grid -->
+    <section class="catalog-section">
+      <h2>Popular Anime</h2>
+      <div id="anime-container" class="card-grid" aria-live="polite">
+        <p class="loading-state">Loading popular titles...</p>
+      </div>
+    </section>
+
+    <!-- Save Favorites Callout Banner -->
+    <section class="favorites-callout">
+      <div class="callout-content">
+        <span class="callout-icon" aria-hidden="true">❤️</span>
+        <div>
+          <h3>Save Your Favorites</h3>
+          <p>Tap the heart icon on any anime card to save titles directly to your device for easy access later.</p>
+        </div>
+      </div>
+      <a href="browse.html" class="btn callout-btn">Browse Full Catalog &rarr;</a>
+    </section>
+
+    <!-- Modal Dialog -->
+    <dialog id="anime-modal" class="anime-dialog"></dialog>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Anime Explorer | WDD231 Final Project</p>
+      <p>
+        Data powered by <a href="https://jikan.moe/" target="_blank" rel="noopener">Jikan API</a> &amp; <a href="https://myanimelist.net/" target="_blank" rel="noopener">MyAnimeList</a>.
+      </p>
+      <p>
+        <a href="attributions.html">Attributions</a> | 
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener">Project Overview Video</a>
+      </p>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/nav.js"></script>
+  <script type="module" src="scripts/catalog.js"></script>
+</body>
+</html>

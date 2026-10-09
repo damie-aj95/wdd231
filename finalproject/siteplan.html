@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Plan | Anime Explorer</title>
+  <meta name="description" content="WDD231 Site Plan document for Anime Explorer including target audience, color palette, typography, wireframes, and site map.">
+  <meta name="author" content="Damilare Samuel Ajayi">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="Site Plan | Anime Explorer">
+  <meta property="og:description" content="Site architecture, branding guidelines, and wireframes for Anime Explorer.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://damie-aj95.github.io/wdd231/finalproject/images/og-image.jpg">
+  <meta property="og:url" content="https://damie-aj95.github.io/wdd231/finalproject/siteplan.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="logo-link">
+        <span class="logo-icon" aria-hidden="true">🧭</span>
+        <span class="logo-text">Anime Explorer</span>
+      </a>
+      
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="browse.html">Browse Catalog</a></li>
+          <li><a href="recommend.html">Recommend</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="siteplan-main">
+    <h1>ANIME EXPLORER SITE PLAN</h1>
+
+    <!-- 1. Site Overview -->
+    <section class="plan-section">
+      <h2>1. Site Overview &amp; Name Reason</h2>
+      <dl class="overview-list">
+        <dt>Site Name:</dt>
+        <dd>Anime Explorer</dd>
+        
+        <dt>Target Domain Idea:</dt>
+        <dd><code>animeexplorer.dev</code></dd>
+
+        <dt>Reason for Selection:</dt>
+        <dd>The name "Anime Explorer" was selected because it immediately conveys the site's primary functionality—providing an intuitive, interactive gateway for fans to explore, filter, and discover anime titles across various genres without unnecessary navigation barriers.</dd>
+
+        <dt>Purpose:</dt>
+        <dd>Anime Explorer is an accessible, responsive web application designed to help users search, filter, and discover anime series. Powered by the Jikan REST API v4, users can browse top titles, view detailed modal overviews, submit recommendations, and persist favorite shows to local device storage.</dd>
+      </dl>
+    </section>
+
+    <!-- 2. Target Audience & Scenarios -->
+    <section class="plan-section">
+      <h2>2. Target Audience &amp; User Scenarios</h2>
+      <p><strong>Primary Persona:</strong> Anime enthusiasts, casual viewers, and students looking for quick series recommendations, episode counts, genres, and community scores.</p>
+      
+      <ul class="plan-list">
+        <li><strong>Scenario 1:</strong> "I want to quickly filter and find popular Action anime to watch this weekend."</li>
+        <li><strong>Scenario 2:</strong> "I want to save my favorite shows so they remain bookmarked on my browser when I return."</li>
+        <li><strong>Scenario 3:</strong> "I want to suggest an underrated anime series that isn't listed in the current collection."</li>
+      </ul>
+    </section>
+
+    <!-- 3. Branding & Color Palette -->
+    <section class="plan-section">
+      <h2>3. Color Palette &amp; Application Rules</h2>
+      <p>The visual design utilizes a high-contrast color palette tested against WebAIM AA accessibility contrast guidelines (minimum 4.5:1 ratio for standard text):</p>
+      
+      <div class="color-grid">
+        <div class="color-swatch indigo">
+          <span class="swatch-label">Deep Indigo<br>#1E1B4B</span>
+        </div>
+        <div class="color-swatch coral">
+          <span class="swatch-label">Coral Accent<br>#E05D00</span>
+        </div>
+        <div class="color-swatch offwhite">
+          <span class="swatch-label">Off-White BG<br>#F8FAFC</span>
+        </div>
+        <div class="color-swatch nearblack">
+          <span class="swatch-label">Near-Black Text<br>#0F172A</span>
+        </div>
+      </div>
+
+      <ul class="plan-list color-usage-list">
+        <li><strong>Deep Indigo (#1E1B4B):</strong> Primary branding, header, footer background, primary buttons, and card title highlights.</li>
+        <li><strong>Coral Accent (#E05D00):</strong> Primary action CTA highlights, hover states, active navigation border indicators, and requirement labels. (Darkened slightly to pass WebAIM 4.5:1 contrast against white backgrounds).</li>
+        <li><strong>Off-White (#F8FAFC):</strong> Global page body background color and card wrap fill to maintain low eye strain.</li>
+        <li><strong>Near-Black (#0F172A):</strong> High-contrast primary body text color and dialog synopsis copy.</li>
+      </ul>
+    </section>
+
+    <!-- 4. Typography -->
+    <section class="plan-section">
+      <h2>4. Typography</h2>
+      <div class="typo-demo">
+        <div class="typo-box">
+          <span class="font-title">Headings: Bebas Neue (Display Font)</span>
+          <p class="sample-heading">FIND YOUR NEXT ADVENTURE</p>
+        </div>
+        <div class="typo-box">
+          <span class="font-title">Body Text: Nunito (400, 600, 700)</span>
+          <p class="sample-body">Anime Explorer provides clean, high-contrast readability across all responsive device screen sizes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Site Map -->
+    <section class="plan-section">
+      <h2>5. Navigation &amp; Site Map</h2>
+      <ul class="sitemap-tree">
+        <li><strong>index.html:</strong> Home page featuring hero title, genre pill filter buttons, live search input, and spotlight popular anime grid[cite: 3].</li>
+        <li><strong>browse.html:</strong> Full catalog collection view with combined genre select, sorting by score/episodes, and local storage favorites toggle checkbox[cite: 3, 4].</li>
+        <li><strong>recommend.html:</strong> Interactive anime recommendation form with required fields, title hints, and HTML validation[cite: 3, 4].</li>
+        <li><strong>thanks.html:</strong> Submission confirmation page that extracts and displays GET parameters safely with HTML entity escaping.</li>
+        <li><strong>attributions.html:</strong> Citations for the Jikan REST API v4, MyAnimeList database, and Google Fonts.</li>
+      </ul>
+    </section>
+
+    <!-- 6. Wireframes Section -->
+    <section class="plan-section">
+      <h2>6. Wireframes</h2>
+      <p>Hand-drawn wireframe sketches representing the home page layouts for mobile and desktop screens[cite: 3, 4]:</p>
+      
+      <div class="wireframe-grid">
+        <div class="wireframe-card">
+          <h3>Mobile Screen Layout</h3>
+          <img src="images/wireframe-small.png" alt="Hand-drawn wireframe sketch showing mobile single-column layout for Anime Explorer home page" loading="lazy" width="320" height="480">
+        </div>
+
+        <div class="wireframe-card">
+          <h3>Desktop / Large Screen Layout</h3>
+          <img src="images/wireframe-large.png" alt="Hand-drawn wireframe sketch showing desktop multi-column layout for Anime Explorer home page" loading="lazy" width="600" height="400">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Anime Explorer | WDD231 Final Project</p>
+      <p>
+        Data powered by <a href="https://jikan.moe/" target="_blank" rel="noopener">Jikan API</a> &amp; <a href="https://myanimelist.net/" target="_blank" rel="noopener">MyAnimeList</a>.
+      </p>
+      <p>
+        <a href="attributions.html">Attributions</a> | 
+        <a href="https://www.youtube.com/watch?your-recorded-video-id" target="_blank" rel="noopener">Project Overview Video</a>
+      </p>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/nav.js"></script>
+</body>
+</html>

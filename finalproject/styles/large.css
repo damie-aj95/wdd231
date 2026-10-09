@@ -1,0 +1,175 @@
+/* ==========================================================================
+   ANIME EXPLORER - LARGE / DESKTOP STYLESHEET
+   Target: Screens 768px and wider
+   Matches wireframe: Search bar, pill filters, 3-column grid, and banner
+   ========================================================================== */
+
+@media (min-width: 768px) {
+
+  main {
+    max-width: 1100px;
+    padding: 2.5rem 1.5rem;
+  }
+
+  /* Header & Navigation */
+  .header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+  }
+
+  .logo-link h1 {
+    font-size: 2.2rem;
+  }
+
+  /* Hide Mobile Hamburger Toggle on Desktop */
+  .nav-toggle {
+    display: none;
+  }
+
+  /* Horizontal Navigation Bar */
+  .site-nav {
+    display: block !important;
+    position: static;
+    background-color: transparent;
+    padding: 0;
+    border-top: none;
+  }
+
+  .site-nav ul {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .site-nav a {
+    font-size: 1.4rem;
+    padding: 0.25rem 0.5rem;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .site-nav a:hover,
+  .site-nav a:focus,
+  .site-nav a.active {
+    border-bottom: 2px solid var(--accent-coral);
+  }
+
+  .nav-search-icon {
+    font-size: 1.2rem;
+  }
+
+  /* Hero Section & Headline */
+  .hero-section {
+    text-align: center;
+    padding: 2rem 0;
+  }
+
+  .hero-section h2 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+  }
+
+  .hero-section p {
+    font-size: 1.15rem;
+  }
+
+  /* Search Bar & Pill Filters */
+  .search-box {
+    max-width: 650px;
+    margin: 1.5rem auto;
+  }
+
+  .search-box input {
+    padding: 0.85rem 1rem 0.85rem 2.8rem;
+    font-size: 1.05rem;
+  }
+
+  .filter-pills {
+    gap: 0.75rem;
+  }
+
+  .pill {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.95rem;
+  }
+
+  /* 3-Column Desktop Grid for Anime Cards */
+  .catalog-section h3 {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+  }
+
+  .anime-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .anime-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-image-wrap {
+    height: 240px;
+  }
+
+  /* "Want to save your favorites?" Callout Banner */
+  .favorites-callout {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 1.5rem 2rem;
+    margin: 3rem 0 2rem 0;
+  }
+
+  .callout-content {
+    gap: 1.25rem;
+  }
+
+  .callout-content h4 {
+    font-size: 1.3rem;
+  }
+
+  .callout-content p {
+    font-size: 1.05rem;
+  }
+
+  .callout-btn {
+    white-space: nowrap;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  /* Footer Layout */
+  .footer-container {
+    max-width: 1100px;
+    padding: 0 1.5rem;
+  }
+
+  /* Modal Dialog Desktop Size */
+  .anime-dialog {
+    max-width: 650px;
+    width: 90%;
+    border-radius: 12px;
+  }
+
+  .modal-content {
+    padding: 2rem;
+  }
+
+  .modal-body {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .modal-body img {
+    width: 200px;
+    height: 290px;
+    object-fit: cover;
+  }
+}

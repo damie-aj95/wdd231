@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recommendation Received | Anime Explorer</title>
+  <meta name="description" content="Confirmation page displaying submitted anime recommendation details.">
+  <meta name="author" content="Your Name">
+  <meta name="robots" content="noindex">
+
+  <!-- Open Graph Protocol Tags -->
+  <meta property="og:title" content="Recommendation Received | Anime Explorer">
+  <meta property="og:description" content="Thank you for submitting an anime recommendation to Anime Explorer.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://damie-aj95.github.io/wdd231/finalproject/images/og-image.jpg">
+  <meta property="og:url" content="https://damie-aj95.github.io/wdd231/finalproject/thanks.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Optimized Font Loading: Dropped unused italic weights -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/large.css" media="(min-width: 768px)">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="logo-link">
+        <span class="logo-icon" aria-hidden="true">🧭</span>
+        <span class="logo-text">Anime Explorer</span>
+      </a>
+      
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="browse.html">Browse Catalog</a></li>
+          <li><a href="recommend.html">Recommend</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="thanks-container">
+      <h1><span aria-hidden="true">🎉</span> Recommendation Submitted!</h1>
+      <p>Thank you for contributing to Anime Explorer. Below is a summary of the details we received:</p>
+
+      <!-- Dynamic Submission Target with Accessible Announcement -->
+      <div id="submission-details" class="details-card" aria-live="polite">
+        <p>Loading submission data...</p>
+      </div>
+
+      <!-- Action Button Container (Styled via CSS classes, no inline styles) -->
+      <div class="action-links">
+        <a href="browse.html" class="btn primary-btn">Browse Catalog</a>
+        <a href="recommend.html" class="btn secondary-btn thanks-secondary">Submit Another Title</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Anime Explorer | WDD231 Final Project</p>
+      <p>
+        Data powered by <a href="https://jikan.moe/" target="_blank" rel="noopener">Jikan API</a> &amp; <a href="https://myanimelist.net/" target="_blank" rel="noopener">MyAnimeList</a>.
+      </p>
+      <p>
+        <a href="attributions.html">Attributions</a> | 
+        <a href="https://www.youtube.com/watch?your-recorded-video-id" target="_blank" rel="noopener">Project Overview Video</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Dedicated script for navigation and reading URL query parameters -->
+  <script type="module" src="scripts/thanks.js"></script>
+  <script type="module" src="scripts/nav.js"></script>
+</body>
+</html>
