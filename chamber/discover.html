@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Lagos: beaches, art, markets, and cultural landmarks near Lagos Chamber of Commerce members.">
+    <meta name="author" content="Damilare Samuel Ajayi">
+    <title>Discover | Lagos Chamber of Commerce</title>
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <meta property="og:title" content="Discover Lagos | Lagos Chamber of Commerce">
+    <meta property="og:description" content="Eight places that make Lagos worth visiting and doing business in.">
+    <meta property="og:image" content="https://damie-aj95.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://damie-aj95.github.io/wdd231/chamber/discover.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="../images/logo.svg" alt="Lagos Chamber of Commerce Logo" width="40" height="40">
+        <span>Lagos Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li class="current"><a href="discover.html" aria-current="page">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Discover Lagos</h1>
+
+        <div id="visit-message" class="visit-message" role="status" hidden>
+            <p></p>
+            <button type="button" aria-label="Close message">&times;</button>
+        </div>
+
+        <section id="discover-grid" class="discover-grid"></section>
+    </main>
+
+    <!-- footer: copy exactly from index.html -->
+</body>
+
+</html>

@@ -563,3 +563,104 @@ footer {
 .thankyou-summary strong {
     color: #3d405b;
 }
+
+/* Discover page */
+.visit-message {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: #f5ead9;
+    border-left: 4px solid #e07a5f;
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+}
+
+.visit-message[hidden] {
+    display: none;
+}
+
+.visit-message button {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #3d405b;
+    cursor: pointer;
+}
+
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "c1"
+        "c2"
+        "c3"
+        "c4"
+        "c5"
+        "c6"
+        "c7"
+        "c8";
+    gap: 15px;
+}
+
+.discover-card:nth-child(1) { grid-area: c1; }
+.discover-card:nth-child(2) { grid-area: c2; }
+.discover-card:nth-child(3) { grid-area: c3; }
+.discover-card:nth-child(4) { grid-area: c4; }
+.discover-card:nth-child(5) { grid-area: c5; }
+.discover-card:nth-child(6) { grid-area: c6; }
+.discover-card:nth-child(7) { grid-area: c7; }
+.discover-card:nth-child(8) { grid-area: c8; }
+
+.discover-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f2f2f2;
+    border-left: 4px solid #3d405b;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.discover-card h2 {
+    color: #3d405b;
+    font-size: 1.2rem;
+}
+
+.discover-card figure {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.discover-card img {
+    width: 100%;
+    height: auto;
+}
+
+.discover-card address {
+    font-style: normal;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.discover-card p {
+    font-size: 0.9rem;
+}
+
+.discover-card button {
+    margin-top: auto;
+    align-self: flex-start;
+    background-color: #3d405b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+.discover-card button:hover {
+    background-color: #2c2e42;
+}

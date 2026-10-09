@@ -1,2 +1,9 @@
-document.querySelector('#year').textContent = new Date().getFullYear();
-document.querySelector('#lastModified').textContent = `Last Modification: ${document.lastModified}`;
+const yearEl = document.querySelector('#year');
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
+
+const lastModifiedEl = document.querySelector('#lastModified');
+if (lastModifiedEl) {
+  lastModifiedEl.textContent = `Last Modification: ${document.lastModified}`;
+}

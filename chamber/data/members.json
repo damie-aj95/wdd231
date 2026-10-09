@@ -1,67 +1,50 @@
-{
-  "members": [
-    {
-      "name": "Ballers Market",
-      "address": "14 Adeniran Ogunsanya St, Surulere, Lagos",
-      "phone": "(234) 801-555-0101",
-      "url": "https://ballersmarket.gmail.com",
-      "image": "ballers-market.jpg",
-      "tagline": "Premium sneaker resale and streetwear",
-      "membership": 3
-    },
-    {
-      "name": "Lekki Fresh Foods",
-      "address": "22 Admiralty Way, Lekki Phase 1, Lagos",
-      "phone": "(234) 802-555-0102",
-      "url": "https://lekkifreshfoods.gmail.com",
-      "image": "lekki-fresh-foods.jpg",
-      "tagline": "Farm-to-table grocery and produce delivery",
-      "membership": 2
-    },
-    {
-      "name": "Yaba Tech Hub",
-      "address": "8 Herbert Macaulay Way, Yaba, Lagos",
-      "phone": "(234) 803-555-0103",
-      "url": "https://yabatechhub.gmail.com",
-      "image": "yaba-tech-hub.jpg",
-      "tagline": "Coworking space and startup incubator",
-      "membership": 3
-    },
-    {
-      "name": "Ikeja Auto Care",
-      "address": "45 Allen Avenue, Ikeja, Lagos",
-      "phone": "(234) 804-555-0104",
-      "url": "https://ikejaautocare.gmail.com",
-      "image": "ikeja-auto-care.jpg",
-      "tagline": "Full-service auto repair and maintenance",
-      "membership": 1
-    },
-    {
-      "name": "Victoria Island Law Group",
-      "address": "3 Ahmadu Bello Way, Victoria Island, Lagos",
-      "phone": "(234) 805-555-0105",
-      "url": "https://vilawgroup.gmail.com",
-      "image": "vi-law-group.jpg",
-      "tagline": "Business and corporate legal services",
-      "membership": 2
-    },
-    {
-      "name": "Ajayi Design Studio",
-      "address": "17 Bode Thomas St, Surulere, Lagos",
-      "phone": "(234) 806-555-0106",
-      "url": "https://ajayidesignstudio.gmail.com",
-      "image": "ajayi-design-studio.jpg",
-      "tagline": "Graphic design and brand identity",
-      "membership": 1
-    },
-    {
-      "name": "Marina Bakery & Cafe",
-      "address": "5 Marina Road, Lagos Island, Lagos",
-      "phone": "(234) 807-555-0107",
-      "url": "https://marinabakery.gmail.com",
-      "image": "marina-bakery.jpg",
-      "tagline": "Fresh baked goods and specialty coffee",
-      "membership": 2
-    }
-  ]
-}
+[
+  {
+    "name": "Lekki Conservation Centre",
+    "address": "Lekki-Epe Expressway, Lekki, Lagos",
+    "description": "A protected nature reserve with marsh trails and a canopy walkway above the treetops. Visitors can spot monkeys, birds, and other wildlife.",
+    "image": "../images/lekki-conservation-centre.webp"
+  },
+  {
+    "name": "Nike Art Gallery",
+    "address": "2 Elegushi Beach Road, Ikate, Lekki, Lagos",
+    "description": "A multi-storey gallery filled with paintings, sculpture, and textiles by Nigerian artists.",
+    "image": "../images/nike-art-gallery.webp"
+  },
+  {
+    "name": "Freedom Park",
+    "address": "Broad Street, Lagos Island, Lagos",
+    "description": "An arts and cultural site built on the grounds of a former colonial prison.",
+    "image": "../images/freedom-park.webp"
+  },
+  {
+    "name": "National Museum",
+    "address": "Onikan, Lagos Island, Lagos",
+    "description": "Exhibits on Nigerian history, ethnography, and traditional art pieces.",
+    "image": "../images/national-museum.webp"
+  },
+  {
+    "name": "Tarkwa Bay",
+    "address": "Near Lagos Harbour, Lagos",
+    "description": "A sheltered beach accessible only by boat, popular for water sports and swimming.",
+    "image": "../images/tarkwa-bay.webp"
+  },
+  {
+    "name": "Lekki Crafts Market",
+    "address": "Oba Yekini St, Lekki Peninsula II, Lagos",
+    "description": "An open-air market for traditional crafts, wood carvings, and handmade jewelry.",
+    "image": "../images/lekki-crafts-market.webp"
+  },
+  {
+    "name": "Terra Kulture",
+    "address": "1376 Tiamiyu Savage St, Victoria Island, Lagos",
+    "description": "An arts center featuring an art gallery, theater, restaurant, and language school.",
+    "image": "../images/terra-kulture.webp"
+  },
+  {
+    "name": "Balogun Market",
+    "address": "Balogun St, Lagos Island, Lagos",
+    "description": "A sprawling, vibrant street market famous for textiles, fabrics, and clothing.",
+    "image": "../images/balogun-market.webp"
+  }
+]
