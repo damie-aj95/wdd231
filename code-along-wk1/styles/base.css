@@ -1,0 +1,89 @@
+/*-------------Color Scheme--------
+terra catta #e87a5b
+deep slate blue #3d405b,
+*/
+
+/************* Site Wide ************/
+
+* {
+    font-family: "josefin Sans" sans-serif;
+    box-sizing: border-box;
+}
+
+/********** Header *******/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img {
+     display: block;
+     width: 100%;
+     height: auto;
+     padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #3d405b;
+}
+
+/*********** Hamburger Navigation *****/
+.hamburger {
+    background: none;
+    border: none;
+    color: #3d405b;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+
+.hamburger.show::before {
+    content: "\00d7";
+    
+}
+
+/***********Navigation************/
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: #3d405b;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd; 
+}
+
+.navigation li.current {
+    background-color: #eee;
+}
+
+.navigation a:hover {
+    background-color: #e87a5b;
+}
+
+h1 {
+    margin-left: 10px;
+}
+        

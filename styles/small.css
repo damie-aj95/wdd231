@@ -1,0 +1,216 @@
+
+/* CSS Variables */
+:root {
+    --primary: #12304A;
+    --secondary: #D9A441;
+    --bg: #FFFFFF;
+    --text: #222222;
+    --panel: #F2F4F6;
+    --accent: #D9A441;
+    --done: #E5F2E9;
+    --done-border: #287A45;
+}
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Josefin Sans", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+}
+
+/* Header */
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 1rem;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* Mobile Menu Button */
+#menu-btn {
+    background: #ffffff;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    font-size: 1.6rem;
+    line-height: 1;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav a {
+    display: block;
+    padding: 0.8rem 1rem;
+    color: #ffffff;
+    background: var(--primary);
+    text-decoration: none;
+    font-weight: 700;
+    border-bottom: 1px solid #555555;
+}
+
+nav a:hover,
+nav a:focus {
+    background: #4a5668;
+}
+
+nav a.active {
+    background: #4a5668;
+    border-left: 5px solid var(--accent);
+}
+
+/* Main Content */
+main {
+    padding: 1rem;
+}
+
+h1 {
+    margin: 0.25rem 0 0.75rem;
+    font-size: 1.6rem;
+}
+
+h2 {
+    margin: 0 0 0.75rem;
+    padding: 0.4rem;
+    background: var(--primary);
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Sections */
+section {
+    background: var(--panel);
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+/* Profile Photo */
+.photo img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* Course Section */
+.courses {
+    background: #ffffff;
+    padding: 0;
+}
+
+.filters {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+}
+
+.filters button {
+    flex: 1;
+    font: inherit;
+    font-weight: 700;
+    padding: 0.5rem;
+    border: 2px solid var(--primary);
+    background: #c9ced6;
+    color: var(--primary);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.filters button:hover,
+.filters button:focus,
+.filters button.active {
+    background: var(--primary);
+    color: #ffffff;
+}
+
+/* Course List */
+#course-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+}
+
+.course {
+    padding: 0.5rem;
+    text-align: center;
+    background: #c9ced6;
+    border: 2px solid #9aa3b0;
+    font-size: 0.9rem;
+}
+
+.course.completed {
+    background: var(--done);
+    border-color: var(--done-border);
+    font-weight: 700;
+}
+
+.course.completed::after {
+    content: " \2713";
+}
+
+/* Credit Total */
+#credits {
+    text-align: center;
+    font-size: 0.9rem;
+    margin: 0.75rem 0 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.75rem;
+}
+
+.info {
+    background: var(--panel);
+    padding: 0.75rem;
+    font-size: 0.9rem;
+}
+
+.info p {
+    margin: 0.2rem 0;
+}
+
+/* Keyboard Focus */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+}

@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=h1, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dami | WDD 231 Home</title>
+  <meta name="description" content="Dami's WDD 231 home page with a filterable list of Web and Computer Programming certificate courses.">
+  <meta name="author" content="Dami">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
 </head>
 <body>
-    <h1>Damailare Samuel Ajayi |wdd231</h1>
+  <header>
+    <div class="top">
+      <div class="brand">
+        <img src="images/logo.svg" alt="" width="48" height="48">
+        <span>Damilare/span>
+      </div>
+      <button id="menu-btn" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">&#9776;</button>
+    </div>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="#">Chamber Project</a></li>
+        <li><a href="#">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+
+    <section class="about">
+      <h2>About Me</h2>
+      <p>Hi, I'm Damilare, a web development student in Lagos, Nigeria. I'm learning to build fast, responsive, accessible websites with HTML, CSS, and JavaScript. Outside of class I help run social media and shipping for a sneaker resale business.</p>
+    </section>
+
+    <section class="photo">
+      <h2>Student Photo</h2>
+      <img src="images/dami.webp" alt="Portrait of Dami" width="300" height="300">
+    </section>
+
+    <section class="courses">
+      <h2>Web Certificate Courses</h2>
+      <div class="filters">
+        <button type="button" data-filter="all" class="active">All</button>
+        <button type="button" data-filter="CSE">CSE</button>
+        <button type="button" data-filter="WDD">WDD</button>
+      </div>
+      <div id="course-list"></div>
+      <p id="credits" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://www.linkedin.com/in/your-profile"><img src="images/linkedin.svg" alt="LinkedIn" width="40" height="40"></a>
+      <a href="https://github.com/your-username"><img src="images/github.svg" alt="GitHub" width="40" height="40"></a>
+      <a href="https://x.com/your-handle"><img src="images/x.svg" alt="X" width="40" height="40"></a>
+    </div>
+    <div class="info">
+      <p>&copy; <span id="year"></span> &bull; Damilare &bull; Nigeria</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
 </body>
 </html>
