@@ -1,0 +1,55 @@
+{
+  "members": [
+    {
+      "familyName": "Adeyemi",
+      "moveInDate": "2026-01-15",
+      "familySize": 4,
+      "visitedByBishopric": true,
+      "familyMembers": [
+        {
+          "name": "Samuel Adeyemi",
+          "gender": "Male",
+          "birthdate": "1995-05-23"
+        },
+        {
+          "name": "Grace Adeyemi",
+          "gender": "Female",
+          "birthdate": "1997-08-12"
+        },
+        {
+          "name": "David Adeyemi",
+          "gender": "Male",
+          "birthdate": "2020-03-18"
+        },
+        {
+          "name": "Sarah Adeyemi",
+          "gender": "Female",
+          "birthdate": "2023-11-05"
+        }
+      ]
+    },
+    {
+      "familyName": "Okafor",
+      "moveInDate": "2026-03-10",
+      "familySize": 3,
+      "visitedByBishopric": false,
+      "familyMembers": [
+        {
+          "name": "Michael Okafor",
+          "gender": "Male",
+          "birthdate": "1990-06-14"
+        },
+        {
+          "name": "Rebecca Okafor",
+          "gender": "Female",
+          "birthdate": "1992-09-21"
+        },
+        {
+          "name": "Daniel Okafor",
+          "gender": "Male",
+          "birthdate": "2018-12-02"
+        }
+      ]
+    }
+  ]
+}
