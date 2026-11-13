@@ -1,0 +1,66 @@
+
+[
+  {
+    "name": "Atlantic Technologies",
+    "tagline": "Technology solutions for modern businesses",
+    "address": "Victoria Island, Lagos, Nigeria",
+    "phone": "+234 800 000 0001",
+    "website": "https://example.com",
+    "image": "atlantic-tech.webp",
+    "membershipLevel": 3
+  },
+  {
+    "name": "Lagos Business Hub",
+    "tagline": "Supporting business growth and innovation",
+    "address": "Ikeja, Lagos, Nigeria",
+    "phone": "+234 800 000 0002",
+    "website": "https://example.com",
+    "image": "business-hub.webp",
+    "membershipLevel": 2
+  },
+  {
+    "name": "Greenfield Logistics",
+    "tagline": "Reliable delivery and logistics services",
+    "address": "Apapa, Lagos, Nigeria",
+    "phone": "+234 800 000 0003",
+    "website": "https://example.com",
+    "image": "greenfield-logistics.webp",
+    "membershipLevel": 1
+  },
+  {
+    "name": "Sunrise Foods",
+    "tagline": "Quality food products and distribution",
+    "address": "Surulere, Lagos, Nigeria",
+    "phone": "+234 800 000 0004",
+    "website": "https://example.com",
+    "image": "sunrise-foods.webp",
+    "membershipLevel": 2
+  },
+  {
+    "name": "Coastal Properties",
+    "tagline": "Property sales and real estate services",
+    "address": "Lekki, Lagos, Nigeria",
+    "phone": "+234 800 000 0005",
+    "website": "https://example.com",
+    "image": "coastal-properties.webp",
+    "membershipLevel": 3
+  },
+  {
+    "name": "Metro Finance Group",
+    "tagline": "Business financial support and consulting",
+    "address": "Yaba, Lagos, Nigeria",
+    "phone": "+234 800 000 0006",
+    "website": "https://example.com",
+    "image": "metro-finance.webp",
+    "membershipLevel": 1
+  },
+  {
+    "name": "Heritage Hospitality",
+    "tagline": "Hospitality and event management services",
+    "address": "Ikoyi, Lagos, Nigeria",
+    "phone": "+234 800 000 0007",
+    "website": "https://example.com",
+    "image": "heritage-hospitality.webp",
+    "membershipLevel": 2
+  }
+]

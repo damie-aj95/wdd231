@@ -1,0 +1,135 @@
+
+/* DESKTOP AND TABLET STYLES */
+
+@media screen and (min-width: 700px) {
+
+  /* HEADER */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 5%;
+  }
+
+  .brand {
+    font-size: 1.3rem;
+  }
+
+  .controls {
+    margin: 0;
+    align-items: center;
+  }
+
+  #menu-btn {
+    display: none;
+  }
+
+  /* NAVIGATION */
+  header nav {
+    width: 100%;
+  }
+
+  nav ul,
+  nav ul.open {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0 0;
+  }
+
+  nav ul li {
+    flex: 0 0 auto;
+  }
+
+  nav a {
+    padding: 0.8rem 1.2rem;
+    border-radius: 4px;
+  }
+
+  /* MAIN CONTENT */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  main h1 {
+    font-size: 2rem;
+  }
+
+  /* GRID VIEW */
+  #members.grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  /* BUSINESS CARDS */
+  .member-card {
+    min-height: 220px;
+  }
+
+  .member-card h2,
+  .member-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .member-details {
+    justify-content: space-around;
+  }
+
+  /* LIST VIEW */
+  #members.list .member-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    text-align: left;
+    padding: 1rem 1.5rem;
+  }
+
+  #members.list .member-card h2,
+  #members.list .member-card h3 {
+    grid-column: 1 / -1;
+  }
+
+  #members.list .member-details {
+    grid-column: 1 / -1;
+    display: flex;
+  }
+
+  #members.list .member-details img {
+    display: block;
+    width: 100px;
+  }
+
+  /* FOOTER */
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 5%;
+  }
+
+  footer .social {
+    justify-content: center;
+  }
+
+  footer .info {
+    text-align: right;
+  }
+}
+
+/* LARGE DESKTOP */
+@media screen and (min-width: 1000px) {
+
+  header {
+    padding-left: max(5%, calc((100% - 1200px) / 2));
+    padding-right: max(5%, calc((100% - 1200px) / 2));
+  }
+
+  #members.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
