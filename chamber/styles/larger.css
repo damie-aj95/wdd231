@@ -132,4 +132,20 @@
   #members.grid {
     grid-template-columns: repeat(3, 1fr);
   }
+    .home-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #spotlights {
+    grid-column: 1 / -1;
+  }
+
+  #spotlight-cards {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  .cta {
+    bottom: 2rem;
+    font-size: 1.2rem;
+  }
 }

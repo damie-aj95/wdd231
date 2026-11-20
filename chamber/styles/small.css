@@ -252,3 +252,84 @@ body.dark-mode .views button {
   background-color: #D9A441;
   color: #222222;
 }
+/* HOME PAGE */
+.hero {
+  position: relative;
+  margin: 1rem 0 1.5rem;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cta {
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  transform: translateX(-50%);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.cta:hover,
+.cta:focus {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.home-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: var(--card-background);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+}
+
+.card h2,
+#spotlights h2 {
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+.card ul {
+  padding-left: 1.2rem;
+}
+
+#current-temp {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+#current-desc {
+  margin: 0 0 1rem;
+}
+
+#spotlight-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+body.dark-mode .card {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+body.dark-mode .card h2,
+body.dark-mode #spotlights h2 {
+  color: var(--secondary-color);
+}
