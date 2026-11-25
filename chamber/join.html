@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Join | Lagos Chamber of Commerce</title>
+  <meta name="description" content="Apply for membership in the Lagos Chamber of Commerce and compare the NP, Bronze, Silver, and Gold membership levels.">
+  <meta name="author" content="Damilare Samuel Ajayi">
+
+  <meta property="og:title" content="Join | Lagos Chamber of Commerce">
+  <meta property="og:description" content="Apply to join the Lagos Chamber of Commerce and connect with local businesses.">
+  <meta property="og:image" content="https://damie-aj95.github.io/wdd231/chamber/images/hero.webp">
+  <meta property="og:url" content="https://damie-aj95.github.io/wdd231/chamber/join.html">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/theme.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="40" height="40">
+      <span>Lagos Chamber of Commerce</span>
+    </a>
+
+    <div class="controls">
+      <button id="theme-btn" type="button" aria-label="Toggle dark mode">&#9680;</button>
+      <button id="menu-btn" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">&#9776;</button>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" class="active" aria-current="page">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Join the Chamber</h1>
+
+    <div class="join-layout">
+      <form action="thankyou.html" method="get" class="join-form">
+        <label>First Name
+          <input type="text" name="fname" autocomplete="given-name" title="Enter your first name" required>
+        </label>
+
+        <label>Last Name
+          <input type="text" name="lname" autocomplete="family-name" title="Enter your last name" required>
+        </label>
+
+        <label>Organizational Title
+          <input type="text" name="orgtitle" autocomplete="organization-title"
+                 pattern="[A-Za-z \-]{7,}"
+                 title="At least 7 characters: letters, spaces, and hyphens only">
+        </label>
+
+        <label>Email
+          <input type="email" name="email" autocomplete="email" placeholder="name@example.com" title="Enter a valid email address" required>
+        </label>
+
+        <label>Mobile Phone
+          <input type="tel" name="phone" autocomplete="tel" title="Enter your mobile phone number" required>
+        </label>
+
+        <label>Business or Organization Name
+          <input type="text" name="business" autocomplete="organization" title="Enter your business or organization name" required>
+        </label>
+
+        <label>Membership Level
+          <select name="level" title="Choose a membership level" autocomplete="off" required>
+            <option value="" selected disabled>Select a level</option>
+            <option value="np">NP Membership (non-profit)</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
+
+        <label>Business Description
+          <textarea name="description" rows="4" title="Briefly describe your business or organization" autocomplete="off"></textarea>
+        </label>
+
+        <input type="hidden" name="timestamp" id="timestamp">
+
+        <input type="submit" value="Submit Application">
+      </form>
+
+      <section class="levels" aria-labelledby="levels-title">
+        <h2 id="levels-title">Membership Levels</h2>
+        <div class="level-cards">
+          <article class="level-card np">
+            <h3>NP Membership</h3>
+            <p>For non-profit organizations. No fee.</p>
+            <button type="button" class="card-link" data-modal="np-modal">View benefits</button>
+          </article>
+
+          <article class="level-card bronze">
+            <h3>Bronze Membership</h3>
+            <p>Entry-level business membership.</p>
+            <button type="button" class="card-link" data-modal="bronze-modal">View benefits</button>
+          </article>
+
+          <article class="level-card silver">
+            <h3>Silver Membership</h3>
+            <p>More visibility and event savings.</p>
+            <button type="button" class="card-link" data-modal="silver-modal">View benefits</button>
+          </article>
+
+          <article class="level-card gold">
+            <h3>Gold Membership</h3>
+            <p>Our top tier with premium exposure.</p>
+            <button type="button" class="card-link" data-modal="gold-modal">View benefits</button>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <dialog id="np-modal" aria-labelledby="np-title">
+      <h2 id="np-title">NP Membership</h2>
+      <p><strong>Fee:</strong> Free</p>
+      <ul>
+        <li>Listing in the member directory</li>
+        <li>Access to monthly networking mixers</li>
+        <li>Chamber newsletter</li>
+      </ul>
+      <button type="button" class="close">Close</button>
+    </dialog>
+
+    <dialog id="bronze-modal" aria-labelledby="bronze-title">
+      <h2 id="bronze-title">Bronze Membership</h2>
+      <p><strong>Fee:</strong> Sample price per year</p>
+      <ul>
+        <li>Everything in NP</li>
+        <li>Member discounts on workshops</li>
+        <li>Business listing with logo</li>
+      </ul>
+      <button type="button" class="close">Close</button>
+    </dialog>
+
+    <dialog id="silver-modal" aria-labelledby="silver-title">
+      <h2 id="silver-title">Silver Membership</h2>
+      <p><strong>Fee:</strong> Sample price per year</p>
+      <ul>
+        <li>Everything in Bronze</li>
+        <li>Training sessions included</li>
+        <li>Eligible for home page spotlights</li>
+        <li>Discounted event tickets</li>
+      </ul>
+      <button type="button" class="close">Close</button>
+    </dialog>
+
+    <dialog id="gold-modal" aria-labelledby="gold-title">
+      <h2 id="gold-title">Gold Membership</h2>
+      <p><strong>Fee:</strong> Sample price per year</p>
+      <ul>
+        <li>Everything in Silver</li>
+        <li>Priority spotlight placement on the home page</li>
+        <li>Free event admission and sponsorship options</li>
+        <li>Advertising in chamber communications</li>
+      </ul>
+      <button type="button" class="close">Close</button>
+    </dialog>
+  </main>
+
+  <footer>
+    <address>
+      <strong>Lagos Chamber of Commerce</strong><br>
+      10 Marina Road<br>
+      Lagos, Nigeria<br>
+      info@lagoschamber.example<br>
+      +234 800 555 2300
+    </address>
+
+    <div class="social">
+      <a href="https://www.youtube.com/" aria-label="YouTube"><img src="images/youtube-logo.svg" alt="" width="40" height="40"></a>
+      <a href="https://x.com/" aria-label="X"><img src="images/x-logo.svg" alt="" width="40" height="40"></a>
+      <a href="https://www.linkedin.com/" aria-label="LinkedIn"><img src="images/linkedin-logo.svg" alt="" width="40" height="40"></a>
+    </div>
+
+    <div class="info">
+      <p>WDD 231 Class Project</p>
+      <p>Damilare Samuel Ajayi</p>
+      <p>&copy; <span id="year"></span> Lagos Chamber of Commerce</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

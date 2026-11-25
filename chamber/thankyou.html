@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Thank You | Lagos Chamber of Commerce</title>
+  <meta name="description" content="Thank you for applying to join the Lagos Chamber of Commerce. Here is a summary of your application.">
+  <meta name="author" content="Damilare Samuel Ajayi">
+
+  <meta property="og:title" content="Thank You | Lagos Chamber of Commerce">
+  <meta property="og:description" content="Thank you for applying to join the Lagos Chamber of Commerce.">
+  <meta property="og:image" content="https://damie-aj95.github.io/wdd231/chamber/images/hero.webp">
+  <meta property="og:url" content="https://damie-aj95.github.io/wdd231/chamber/thankyou.html">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/theme.js" defer></script>
+  <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="40" height="40">
+      <span>Lagos Chamber of Commerce</span>
+    </a>
+
+    <div class="controls">
+      <button id="theme-btn" type="button" aria-label="Toggle dark mode">&#9680;</button>
+      <button id="menu-btn" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">&#9776;</button>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" class="active" aria-current="page">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Thank You for Applying</h1>
+    <p class="thanks-intro">We're glad you want to join the Lagos Chamber of Commerce. A team member will contact you soon. Here's what you submitted:</p>
+
+    <section class="summary card" aria-labelledby="summary-title">
+      <h2 id="summary-title">Your Application</h2>
+      <dl>
+        <div><dt>First Name</dt><dd id="fname"></dd></div>
+        <div><dt>Last Name</dt><dd id="lname"></dd></div>
+        <div><dt>Email</dt><dd id="email"></dd></div>
+        <div><dt>Mobile Phone</dt><dd id="phone"></dd></div>
+        <div><dt>Business</dt><dd id="business"></dd></div>
+        <div><dt>Submitted</dt><dd id="timestamp"></dd></div>
+      </dl>
+    </section>
+
+    <p><a class="cta-inline" href="index.html">Back to Home</a></p>
+  </main>
+
+  <footer>
+    <address>
+      <strong>Lagos Chamber of Commerce</strong><br>
+      10 Marina Road<br>
+      Lagos, Nigeria<br>
+      info@lagoschamber.example<br>
+      +234 800 555 2300
+    </address>
+
+    <div class="social">
+      <a href="https://www.youtube.com/" aria-label="YouTube"><img src="images/youtube-logo.svg" alt="" width="40" height="40"></a>
+      <a href="https://x.com/" aria-label="X"><img src="images/x-logo.svg" alt="" width="40" height="40"></a>
+      <a href="https://www.linkedin.com/" aria-label="LinkedIn"><img src="images/linkedin-logo.svg" alt="" width="40" height="40"></a>
+    </div>
+
+    <div class="info">
+      <p>WDD 231 Class Project</p>
+      <p>Damilare Samuel Ajayi</p>
+      <p>&copy; <span id="year"></span> Lagos Chamber of Commerce</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

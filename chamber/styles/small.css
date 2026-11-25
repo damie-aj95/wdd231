@@ -333,3 +333,207 @@ body.dark-mode .card h2,
 body.dark-mode #spotlights h2 {
   color: var(--secondary-color);
 }
+
+/* JOIN PAGE */
+.join-layout {
+  display: grid;
+  gap: 2rem;
+}
+
+.join-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.join-form label {
+  display: block;
+  font-weight: 600;
+}
+
+.join-form input:not([type="submit"]):not([type="hidden"]),
+.join-form select,
+.join-form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 0.3rem;
+  padding: 0.7rem;
+  border: 1px solid #767676;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.join-form input:focus,
+.join-form select:focus,
+.join-form textarea:focus,
+.card-link:focus,
+.close:focus {
+  outline: 3px solid var(--secondary-color);
+  outline-offset: 2px;
+}
+
+/* ADD IT HERE */
+.join-form ::placeholder {
+  color: #595959;
+}
+
+.join-form input[type="submit"] {
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.join-form input[type="submit"]:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.levels h2 {
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+.level-cards {
+  display: grid;
+  gap: 1rem;
+}
+
+.level-card {
+  background-color: var(--card-background);
+  border-top: 6px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  opacity: 0;
+  animation: card-in 0.8s ease-out forwards;
+}
+
+.level-card h3 {
+  color: var(--primary-color);
+  margin: 0 0 0.5rem;
+}
+
+.level-card p {
+  margin: 0 0 0.8rem;
+}
+
+.level-card.np { border-top-color: #4a7c59; animation-delay: 0.1s; }
+.level-card.bronze { border-top-color: #cd7f32; animation-delay: 0.3s; }
+.level-card.silver { border-top-color: #a8a8a8; animation-delay: 0.5s; }
+.level-card.gold { border-top-color: var(--secondary-color); animation-delay: 0.7s; }
+
+@keyframes card-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--primary-color);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.card-link:hover {
+  color: #000000;
+}
+
+dialog {
+  width: min(90%, 420px);
+  border: 3px solid var(--secondary-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+dialog h2 {
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+.close {
+  padding: 0.6rem 1.2rem;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* THANK YOU PAGE */
+.summary dl {
+  margin: 0;
+}
+
+.summary dl div {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #bbbbbb;
+}
+
+.summary dt {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.summary dd {
+  margin: 0.2rem 0 0;
+  overflow-wrap: anywhere;
+}
+
+.cta-inline {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 4px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* DARK MODE: JOIN + THANK YOU */
+body.dark-mode .level-card,
+body.dark-mode dialog {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+body.dark-mode .level-card h3,
+body.dark-mode .levels h2,
+body.dark-mode dialog h2,
+body.dark-mode .summary dt,
+body.dark-mode .card-link {
+  color: var(--secondary-color);
+}
+
+body.dark-mode .join-form input[type="submit"] {
+  background-color: var(--secondary-color);
+  color: #222222;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .level-card {
+    animation: none;
+    opacity: 1;
+  }
+}
